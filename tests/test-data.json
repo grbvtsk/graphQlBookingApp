@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "email": "anotheremail@gmail.com",
+      "password": "P@ssword123"
+    },
+
+    {
+      "email": "testuser@yahoo.com",
+      "password": "MyP@ssw0rd"
+    },
+
+    {
+      "email": "exampleuser@hotmail.com",
+      "password": "SecureP@55"
+    }
+  ],
+  "realestates": [
+    {
+      "title": "Spacious 2-Bedroom Apartment",
+      "address": "123 Main St, Anytown USA",
+      "price": 1200,
+      "owner": "61538f8b7195b7d8713c3f0a"
+    },
+    {
+      "title": "Cozy Studio in Downtown",
+      "address": "456 Market St, Anytown USA",
+      "price": 800,
+      "owner": "61538f8b7195b7d8713c3f0a"
+    },
+    {
+      "title": "Luxurious 3-Bedroom House",
+      "address": "789 Oak Ave, Anytown USA",
+      "price": 2500,
+      "owner": "61538f8b7195b7d8713c3f0b"
+    },
+    {
+      "title": "Charming Bungalow with Garden",
+      "address": "101 Elm St, Anytown USA",
+      "price": 1500,
+      "owner": "61538f8b7195b7d8713c3f0b"
+    },
+    {
+      "title": "Modern Condo with City View",
+      "address": "555 Pine St, Anytown USA",
+      "price": 1800,
+      "owner": "61538f8b7195b7d8713c3f0c"
+    }
+  ],
+  "bookings": [
+    {
+      "realestate": "61538f8b7195b7d8713c3f0d",
+      "user": "61538f8b7195b7d8713c3f0a",
+      "from": "2023-05-10T00:00:00.000Z",
+      "to": "2023-05-17T00:00:00.000Z",
+      "createdAt": "2023-04-25T12:00:00.000Z",
+      "updatedAt": "2023-04-25T12:00:00.000Z"
+    },
+    {
+      "realestate": "61538f8b7195b7d8713c3f0e",
+      "user": "61538f8b7195b7d8713c3f0b",
+      "from": "2023-06-01T00:00:00.000Z",
+      "to": "2023-06-08T00:00:00.000Z",
+      "createdAt": "2023-04-25T13:00:00.000Z",
+      "updatedAt": "2023-04-25T13:00:00.000Z"
+    },
+    {
+      "realestate": "61538f8b7195b7d8713c3f0f",
+      "user": "61538f8b7195b7d8713c3f0c",
+      "from": "2023-07-15T00:00:00.000Z",
+      "to": "2023-07-22T00:00:00.000Z",
+      "createdAt": "2023-04-25T14:00:00.000Z",
+      "updatedAt": "2023-04-25T14:00:00.000Z"
+    }
+  ]
+}
