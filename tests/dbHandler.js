@@ -22,8 +22,8 @@ const updateDbWithRealestates = async (data) => {
   });
   await Realestate.create(data.realestates);
   const richUsersRealestatesIds = await Realestate.find(
-    { owner: richUser._id },
-    { projection: { _id: 1 } }
+      { owner: richUser._id },
+      { projection: { _id: 1 } }
   );
   richUser.ownedRealestates.push(...richUsersRealestatesIds);
   await richUser.save();
@@ -32,7 +32,7 @@ const updateDbWithRealestates = async (data) => {
 const getUserByEmail = async (email) => await User.findOne({ email }).lean();
 
 const getRealestateByTitle = async (title) =>
-  await Realestate.findOne({ title }).lean();
+    await Realestate.findOne({ title }).lean();
 
 const updateDbWithBookings = async (data) => {
   const testUser = await getUserByEmail('testuser@yahoo.com');
@@ -43,15 +43,15 @@ const updateDbWithBookings = async (data) => {
   data.bookings[0].user = anotherUser._id;
 
   const realestateDowntown = await getRealestateByTitle(
-    'Cozy Studio in Downtown'
+      'Cozy Studio in Downtown'
   );
   data.bookings[0].realestate = realestateDowntown;
   const realestateLuxuriousHouse = await getRealestateByTitle(
-    'Luxurious 3-Bedroom House'
+      'Luxurious 3-Bedroom House'
   );
   data.bookings[1].realestate = realestateLuxuriousHouse;
   const realestateBungalow = await getRealestateByTitle(
-    'Charming Bungalow with Garden'
+      'Charming Bungalow with Garden'
   );
   data.bookings[2].realestate = realestateBungalow;
 
@@ -60,7 +60,7 @@ const updateDbWithBookings = async (data) => {
 
 const imporDefaultData = async () => {
   const data = JSON.parse(
-    fs.readFileSync(`${__dirname}/test-data.json`, 'utf-8')
+      fs.readFileSync(`${__dirname}/test-data.json`, 'utf-8')
   );
   try {
     await User.create(data.users);
@@ -76,7 +76,7 @@ const getUserById = async (id) => await User.findById(id).lean();
 const getRealestateById = async (id) => await Realestate.findById(id).lean();
 
 const getOneBooking = async () =>
-  await Booking.findOne({}).populate('user').populate('realestate').lean();
+    await Booking.findOne({}).populate('user').populate('realestate').lean();
 
 const connect = async () => {
   mongod = await MongoMemoryServer.create();

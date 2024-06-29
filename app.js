@@ -5,6 +5,6 @@ import schema from './schema/index.js';
 
 const app = express();
 
-// your code here
+app.all('/graphql', createHandler({ schema }));
 
 export default app;
