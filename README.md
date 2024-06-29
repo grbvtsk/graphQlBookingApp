@@ -1,8 +1,6 @@
-# GraphQL + React Real-estate Booking API
-
-Please, create an application that works with GraphQL.  
+Application works with GraphQL.  
   
-We have 3 mongoose schemas that reflect entities of our application:  
+There are 3 mongoose schemas that represent the core of our application
 User, Relestate and Bookings  
 <img src="./readme-pictures/entities.png" width="550">  
 User can be owner of many real-estates.  
@@ -26,4 +24,7 @@ examples of queries:
  Also, note that drilling through related properties should be possible at any depth.
 
 Set connection string to your database in config.env. < PASSWORD > is substituted in server.js
-  
+
+Well, the finish result must be :
+![image](https://github.com/grbvtsk/graphQlBookingApp/assets/115540128/dd1ea0b8-a024-42a7-92b2-41b2d1ba1621)
+
